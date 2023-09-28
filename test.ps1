@@ -1,11 +1,6 @@
-$counter = 1;
-
-while ($counter -lt 255) {
-    $counter = $counter + 1;
-    
-
-
-$name = @("192.168.0.");
-
-Write-Output "$name$counter";
+for ($i = 1; $i -lt 256; $i++) {
+    $ping = Test-Connection "10.80.44.$i" -Quiet -Count 1;
+    if ($ping) {
+        Write-Output "10.80.44.$i"
+    }
 }
