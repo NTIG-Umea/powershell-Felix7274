@@ -8,5 +8,5 @@ foreach($name in $names) {
         $counter++
         $newuser = $username + $counter
     }
-    New-ADUser -Name "$username" -Path "OU=Felix Anvandare,DC=Walters,DC=Labb"
+    New-ADUser -Name "$newuser" -Path "OU=Felix Anvandare,DC=Walters,DC=Labb"
 }
