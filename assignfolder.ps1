@@ -1,3 +1,3 @@
 
 
-New-ADObject -Name "Felix mapp" -Path "OU=Felix Anvandere,DC=Walters,DC=Labb"
+New-ADObject -Name "Felix grupp" -Type group -Path "OU=Felix Anvandere,DC=Walters,DC=Labb"
