@@ -10,3 +10,4 @@ foreach($name in $names) {
     }
     New-ADUser -Name "$newuser" -Path "OU=Felix Anvandare,DC=Walters,DC=Labb"
 }
+#7274
